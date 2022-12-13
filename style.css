@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Helvetica, "Trebuchet MS", sans-serif; ;
+}
+
+.grid-container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr ; /*podendo usar fração ou porcentagem 75% 25%*/
+    grid-template-rows: 250px 450px 50px;
+    grid-template-areas: "header header"
+                         "main section"
+                         "footer footer";
+    border-collapse: colapse;
+}
+
+
+header{
+    grid-area: header;
+    background-color: #FCF5BE;
+    background-image: url("./Imagens/topo-imagem-lateral.png"),
+                      url("./Imagens/topo-imagem-principal.png"); 
+    background-repeat: no-repeat, no-repeat;
+    background-position: right , left;
+    border: solid 2px #FFFFFF;
+}
+
+
+.imagens{
+    display: inline-block;    
+}
+
+.navegacao{
+    position: absolute;
+    right: 450px;
+   
+}
+
+.navegacao ul{
+    list-style: none;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #8b8448;
+}
+
+.imagem-depoimento{
+    float: right;
+    margin-right: 15px;
+}
+
+.locais{
+    position: absolute;
+    display: inline;
+    right: 200px;
+    margin-top: 10px;
+    padding: 8px;
+    border-top: solid 2px #AA9F68;;
+    border-bottom: solid 2px #AA9F68;
+}
+
+.locais ul{
+    list-style: none;
+    display: flex;
+    color: #8b8448;
+}
+
+
+.botao{
+    margin-left: 35px;
+    padding: 5px;
+    background-color: #A79C55;
+    color: #DFD9B6;
+    border: none;
+}
+
+body{
+    background-image: url("./Imagens/bg.png");
+}
+
+main{
+    grid-area: main;
+    background-color: beige;
+    background-image: url("./Imagens/bg-area-principal.png");
+    background-repeat:repeat-x;
+    background-color: #EFE9CC;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+main h3{
+    color:#8b8448;
+}
+
+section{
+    grid-area: section;
+    background-color: #DFD9B6;
+    background-image: url("./Imagens/bg-area-lateral.png");
+    background-repeat: repeat-x;
+    padding: 40px;
+    font-size: 0.9em;
+    display: block;
+
+}
+
+.lateral{
+    background-image: url("./Imagens/ornamento.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-bottom: solid 2px #FFFFFF;
+}
+
+.lateral img{
+    width: 24%;
+    float: left;
+    margin: 5px
+}
+
+.lateral h3{
+    padding: 8px;
+    margin: 4px;
+    color: #8b8448;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.footer{
+    background-image: url("./Imagens/bg-rodape.png");
+    background-repeat:repeat-x;
+    background-color: #FFFFFF;
+    color: #8b8448;
+    padding: 10px;
+    display:flex;   
+    flex-direction: column;
+    align-items: center;
+    left: 50px;
+    font-size: smaller;
+}
+
+.lateral:hover{
+    background-color: #EFE9CC;
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+button:hover{
+    background-color:#746C3A;
+    cursor: pointer;
+}
+
+.imagem-depoimento:hover {
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.navegacao li:hover{
+    background-color:#DFD9B6;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.locais li:hover{
+    cursor: pointer;
+    color: #FCF5BE;
+    cursor: pointer;
+}
