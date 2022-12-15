@@ -33,13 +33,13 @@ header{
     display: inline-block;    
 }
 
-.navegacao{
+.lista-nav{
     position: absolute;
     right: 450px;
    
 }
 
-.navegacao ul{
+.lista-nav ul{
     list-style: none;
     padding: 10px;
     font-size: 0.9em;
@@ -51,7 +51,7 @@ header{
     margin-right: 15px;
 }
 
-.locais{
+.barra-pesquisa-cidades{
     position: absolute;
     display: inline;
     right: 200px;
@@ -61,7 +61,7 @@ header{
     border-bottom: solid 2px #AA9F68;
 }
 
-.locais ul{
+.barra-pesquisa-cidades ul{
     list-style: none;
     display: flex;
     color: #8b8448;
@@ -105,7 +105,7 @@ section{
 
 }
 
-.lateral{
+.secao-lateral{
     background-image: url("./Imagens/ornamento.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -114,13 +114,13 @@ section{
     border-bottom: solid 2px #FFFFFF;
 }
 
-.lateral img{
+.secao-lateral img{
     width: 24%;
     float: left;
     margin: 5px
 }
 
-.lateral h3{
+.secao-lateral h3{
     padding: 8px;
     margin: 4px;
     color: #8b8448;
@@ -143,7 +143,7 @@ footer{
     font-size: smaller;
 }
 
-.lateral:hover{
+.secao-lateral:hover{
     background-color: #EFE9CC;
     cursor: pointer;
     -webkit-transform: scale(1.1);
@@ -161,14 +161,14 @@ button:hover{
    cursor: pointer;
 }
 
-.navegacao li:hover{
+.lista-nav li:hover{
     background-color:#DFD9B6;
     border-radius: 10px;
     padding: 5px;
     cursor: pointer;
 }
 
-.locais li:hover{
+.barra-pesquisa-cidades li:hover{
     cursor: pointer;
     color: #FCF5BE;
     cursor: pointer;
